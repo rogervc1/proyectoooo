@@ -67,6 +67,7 @@ html {
  * Remove the margin in all browsers.
  */
 
+
 body {
 	margin: 0;
 }
@@ -3542,4 +3543,7 @@ RESPONSIVE STYLESHEET
 .what-other-say .owl-carousel .owl-nav button.owl-prev:hover,
 .what-other-say .owl-nav button.owl-next:hover {
 	background: #12a84e;
+}
+.yo{
+	background-image: url('images/page-banner.jpg')
 }
