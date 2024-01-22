@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>education</title>
+	<title>CARABAYA</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
@@ -10,13 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
 </head>
+
 <body>
 	<div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
 		<header class="site-header">
@@ -24,10 +26,12 @@
 				<div class="container">
 					<div class="top-header-left">
 						<div class="top-header-block">
-							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@educationpro.com</a>
+							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i>
+								info@educationpro.com</a>
 						</div>
 						<div class="top-header-block">
-							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977 9813639131</a>
+							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977
+								9813639131</a>
 						</div>
 					</div>
 					<div class="top-header-right">
@@ -41,10 +45,20 @@
 								<li><a href=""><i class="fab fa-skype"></i></a></li>
 							</ul>
 						</div>
-						<div class="login-block">
+						<?php
+						session_start(); // Iniciar sesión para manejar variables de sesión
+						
+						if (isset($_SESSION["username"])) {
+							// Si la variable de sesión "username" está establecida, muestra el nombre de usuario
+							echo '<p>Hola, ' . $_SESSION["username"] . '.</p>';
+						} else {
+							// Si no está establecida, muestra los enlaces "Login" y "Register"
+							echo '<div class="login-block">
 							<a href="login.html">Login /</a>
-							<a href="login.html">Register</a>
-						</div>
+                  <a href="login.html">Register</a>
+              </div>';
+						}
+						?>
 					</div>
 				</div>
 			</div>
@@ -95,39 +109,39 @@
 		<!-- Header Close -->
 		<div class="banner">
 			<div class="owl-four owl-carousel" itemprop="image">
-				<img src="images/page-banner.jpg" alt="Image of Bannner">
-				<img src="images/page-banner2.jpg" alt="Image of Bannner">
-				<img src="images/page-banner3.jpg" alt="Image of Bannner">
+				<img src="images/Carabaya1.jpg" alt="Image of Bannner">
+				<img src="images/Carabaya2.jpg" alt="Image of Bannner">
+				<img src="images/Carabaya3.jpg" alt="Image of Bannner">
 			</div>
 			<div class="container" itemprop="description">
-				<h1>welcome to education pro</h1>
-				<h3>With our advance search feature you can now find the trips for you...</h3>
+				<h1>Un lugar que debes conocer Carabaya</h1>
+				<h3>El viaje aguarda.</h3>
 			</div>
-			 <div id="owl-four-nav" class="owl-nav"></div>
+			<div id="owl-four-nav" class="owl-nav"></div>
 		</div>
 		<!-- <div class="banner">
 			<div class="owl-five owl-carousel owl-theme">
-	            <div class="item-video">
-            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            		</iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            		</iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-          </div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="item-video">
+					<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+		  </div>
 		</div> -->
 		<!-- Banner Close -->
 		<div class="page-heading">
@@ -141,10 +155,12 @@
 				<div class="courses">
 					<div class="owl-one owl-carousel">
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
+							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg"
+									alt="courses picture"></div>
+							<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
 							<div class="box-body" itemprop="description">
-								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
+								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum
+									lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
 								<section itemprop="time">
 									<p><span>Duration:</span> 4 Years</p>
 									<p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
@@ -154,10 +170,12 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
+							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg"
+									alt="courses picture"></div>
+							<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
 							<div class="box-body" itemprop="description">
-								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
+								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum
+									lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
 								<section itemprop="time">
 									<p><span>Duration:</span> 4 Years</p>
 									<p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
@@ -167,10 +185,12 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
+							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg"
+									alt="courses picture"></div>
+							<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
 							<div class="box-body" itemprop="description">
-								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
+								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum
+									lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
 								<section itemprop="time">
 									<p><span>Duration:</span> 4 Years</p>
 									<p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
@@ -180,10 +200,12 @@
 						</div>
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
-							<div class="img-wrap"  itemprop="image"><img src="images/course-pic.jpg" alt="courses picture"></div>
-								<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
+							<div class="img-wrap" itemprop="image"><img src="images/course-pic.jpg"
+									alt="courses picture"></div>
+							<a href="#" class="learn-desining-banner" itemprop="name">Learn Web Designing >>></a>
 							<div class="box-body" itemprop="description">
-								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
+								<p>Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum
+									lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
 								<section itemprop="time">
 									<p><span>Duration:</span> 4 Years</p>
 									<p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
@@ -208,7 +230,16 @@
 				</div>
 				<div class="whyus-wrap">
 					<h1>why us?</h1>
-					<p itemprop="description">Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum</p>
+					<p itemprop="description">Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsumLorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum Lorem Ipsum lorem ipsum
+						Lorem Ipsum lorem ipsum</p>
 
 					<a href="#" class="read-more-btn">read more</a>
 				</div>
@@ -222,62 +253,74 @@
 		</section>
 		<section class="gallery-images-section" itemprop="image" itemscope itemtype=" http://schema.org/ImageGallery">
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img1.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img1.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img2.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img2.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img3.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img3.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img4.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img4.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img4.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img5.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img5.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img5.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img6.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img6.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img6.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img7.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img7.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img7.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img8.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img8.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img8.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img9.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img9.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img9.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img10.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img10.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img10.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img11.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img11.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img11.jpg" alt="gallery-images">
 				</a>
 			</div>
 			<div class="gallery-img-wrap">
-				<a href="images/gallery-img12.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+				<a href="images/gallery-img12.jpg" data-lightbox="example-set"
+					data-title="Click the right half of the image to move forward.">
 					<img src="images/gallery-img12.jpg" alt="gallery-images">
 				</a>
 			</div>
@@ -295,8 +338,11 @@
 						<img src="images/events.jpg" alt="event images">
 					</div>
 					<div class="details">
-						<a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
+						<a href="">
+							<h3 itemprop="name">Orientation Programme for new Students.</h3>
+						</a>
+						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for
+							new sffs Students. Orientation Programme for new sffs Students.</p>
 
 						<h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
 						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
@@ -308,8 +354,11 @@
 						<img src="images/events.jpg" alt="event images">
 					</div>
 					<div class="details">
-						<a href=""><h3 itemprop="name">Orientation Programme for new Students.</h3></a>
-						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for new sffs Students. Orientation Programme for new sffs Students.</p>
+						<a href="">
+							<h3 itemprop="name">Orientation Programme for new Students.</h3>
+						</a>
+						<p itemprop="description">Orientation Programme for new sffs Students. Orientation Programme for
+							new sffs Students. Orientation Programme for new sffs Students.</p>
 
 						<h5 itemprop="startDate"><i class="far fa-clock"></i> Dec 30,2018 | 11am</h5>
 						<h5 itemprop="location"><i class="fas fa-map-marker-alt"></i> Hotel Malla, Lainchaur</h5>
@@ -400,64 +449,64 @@
 					</div>
 
 					<div id="slider" class="flexslider">
-	  					<ul class="slides">
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Amazing service and amazing team. Thank you!</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Very Satisfaied with their service</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Quick, efficient and meets your expectations</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">The website was according our imagination</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Amazing service and amazing team. Thank you!</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Very Satisfaied with their service</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">Quick, efficient and meets your expectations</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-						    <li>
-						    	<div class="testimonial-holder" itemprop="description">
-						    		<strong class="title">The website was according our imagination</strong>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
-						    		<div class="rateYo"></div>
-						    	</div>
-						    </li>
-	  					</ul>
+						  <ul class="slides">
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Amazing service and amazing team. Thank you!</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Very Satisfaied with their service</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Quick, efficient and meets your expectations</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">The website was according our imagination</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Amazing service and amazing team. Thank you!</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Very Satisfaied with their service</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">Quick, efficient and meets your expectations</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+							<li>
+								<div class="testimonial-holder" itemprop="description">
+									<strong class="title">The website was according our imagination</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique fer-<br/>mentum mauris, non tincidunt arcu venenatis vel. Nam et vehicula turpis. Ut nunc purus, mattis eu odio a, egestas facilisis nibh. Mauris magna diam, iaculis vitae sapien non, pharetra congue purus. Phasellus in odio purus.</p>
+									<div class="rateYo"></div>
+								</div>
+							</li>
+						  </ul>
 					</div>
 				</div>
 			</div> -->
@@ -526,10 +575,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 
@@ -538,10 +590,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 
@@ -550,10 +605,13 @@
 							<img src="images/latest-new-img.jpg" alt="Latest News Images">
 						</div>
 						<div class="news-detail" itemprop="description">
-							<a href=""><h1>Orientation Programme for new Students.</h1></a>
+							<a href="">
+								<h1>Orientation Programme for new Students.</h1>
+							</a>
 							<h2 itemprop="startDate">By Admin | 20 Dec. 2018</h2>
 
-							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students.. Orientatin Programmes for new Students</p>
+							<p>Orientation Programme for new sffs Students. Orientatin Programmes for new Students..
+								Orientatin Programmes for new Students</p>
 						</div>
 					</div>
 				</div>
@@ -562,7 +620,8 @@
 		<!-- Latest News CLosed -->
 		<section class="query-section">
 			<div class="container">
-				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></p>
+				<p>Any Queries? Ask us a question at<a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977
+						9813639131</a></p>
 			</div>
 		</section>
 		<!-- End of Query Section -->
@@ -573,10 +632,12 @@
 						<header>
 							<h1>about</h1>
 						</header>
-						<p>Edulab is a great start for and education. Personnel or oganization to start the online business with 1 click</p>
+						<p>Edulab is a great start for and education. Personnel or oganization to start the online
+							business with 1 click</p>
 
 						<h4><a href="tel:+9779813639131"><i class="fas fa-phone"></i> +977 9813639131</a></h4>
-						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i> info@educationpro.com</a></h4>
+						<h4><a href="mailto:info@educationpro.com"><i class="fas fa-envelope"></i>
+								info@educationpro.com</a></h4>
 						<h4><a href=""><i class="fas fa-map-marker-alt"></i>Gongabu, Kathmandu, Nepal</a></h4>
 					</div>
 
@@ -600,17 +661,21 @@
 						</header>
 						<div class="recent-course-wrap">
 							<img src="images/ui-ux.jpg" alt="Ui/Ux Designing">
-							<a href=""><div class="course-name">
-								<h3>UI/UX Designer courses</h3>
-								<p><span>$50</span> $40</p>
-							</div></a>
+							<a href="">
+								<div class="course-name">
+									<h3>UI/UX Designer courses</h3>
+									<p><span>$50</span> $40</p>
+								</div>
+							</a>
 						</div>
 						<div class="recent-course-wrap">
 							<img src="images/ui-ux.jpg" alt="Ui/Ux Designing">
-							<a href=""><div class="course-name">
-								<h3>UI/UX Designer courses</h3>
-								<p><span>$50</span> $40</p>
-							</div></a>
+							<a href="">
+								<div class="course-name">
+									<h3>UI/UX Designer courses</h3>
+									<p><span>$50</span> $40</p>
+								</div>
+							</a>
 						</div>
 					</div>
 
@@ -643,7 +708,8 @@
 			</div>
 			<div class="footer-last-section">
 				<div class="container">
-					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a href="https://labtheme.com">Lab Theme</a></p>
+					<p>Copyright 2018 &copy; educationpro.com <span> | </span> Theme designed and developed by <a
+							href="https://labtheme.com">Lab Theme</a></p>
 				</div>
 			</div>
 		</footer>
@@ -698,4 +764,5 @@
 	<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
 	<script type="text/javascript" src="js/custom.js"></script>
 </body>
+
 </html>

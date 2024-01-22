@@ -10,7 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Registro exitoso. ¡Bienvenido, $username!";
+        //echo "Registro exitoso. ¡Bienvenido, $username!";
+        header("Location: index.php");
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
